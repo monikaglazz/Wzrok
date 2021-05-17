@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Wzrok</string>
+    <string name="btnHome1">WYKONAJ BADANIE</string>
+    <string name="btnHome2">SPRAWDŹ WYNIKI</string>
+    <string name="textHome">Cześć!</string>
+    <string name="textHome2">Wybierz co chcesz zrobić</string>
+    <string name="textStart2">Dzisiejsza data:</string>
+    <string name="Start">START</string>
+    <string name="Back">POWRÓT</string>
+    <string name="Name">Wprowadź swoje imię</string>
+
+
+</resources>
