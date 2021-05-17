@@ -19,4 +19,6 @@ class MainActivity : AppCompatActivity() {
 
 
     // Iza ma kota
+
+    // Lubie cukierki XD
 }
