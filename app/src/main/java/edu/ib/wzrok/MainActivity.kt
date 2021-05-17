@@ -16,4 +16,7 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
     fun clickHome2(view: View) {}
+
+
+    // Iza ma kota
 }
