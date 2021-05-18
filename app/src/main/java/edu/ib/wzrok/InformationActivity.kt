@@ -5,18 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 
-class MainActivity : AppCompatActivity() {
+class InformationActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_information)
     }
 
-    fun clickHome1(view: View) {
-        val intent=Intent(this, Start::class.java)
+    fun clickStart1(view: View) {
+        val intent= Intent(this, Right::class.java)
         startActivity(intent)
     }
-    fun clickHome2(view: View) {}
-
-
-
 }
