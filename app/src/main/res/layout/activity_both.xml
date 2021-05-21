@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Right">
+    tools:context=".Both">
 
     <Button
         android:id="@+id/btnStart"
@@ -24,7 +24,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="180dp"
-        android:text="Badanie oka Prawego"
+        android:text="Badanie obu oczu"
         android:textAlignment="center"
         android:textColor="@color/black"
         android:textSize="25sp"
@@ -37,7 +37,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="80dp"
-        android:text="Zasłoń LEWE oko!"
+        android:text="Pozostaw oczy odsłonięte!"
         android:textStyle="bold"
         android:textAlignment="center"
         android:textColor="@color/black"

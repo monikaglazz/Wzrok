@@ -8,6 +8,8 @@
     <string name="Start">START</string>
     <string name="Back">POWRÓT</string>
     <string name="Name">Wprowadź swoje imię</string>
+    <string name="Next">DALEJ</string>
+    <string name="Stop">STOP</string>
 
 
 </resources>

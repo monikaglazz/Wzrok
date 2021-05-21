@@ -4,19 +4,46 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
+import android.widget.TextView
+import androidx.core.content.ContextCompat.startActivity
 
 class MainActivity : AppCompatActivity() {
+
+    private var btnHome2 : Button? = null
+    private var btnHome1 : Button? = null
+    private var textHome: TextView? = null
+    private var textHome2: TextView? = null
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        btnHome1 = findViewById(R.id.btnHome1)
+        btnHome1?.setOnClickListener(object  : View.OnClickListener{
+            override fun onClick(v: View?) {
+                openStartActivity()
+            }
+        })
+
+        btnHome2 = findViewById(R.id.btnHome2)
+        btnHome2?.setOnClickListener(object  : View.OnClickListener{
+            override fun onClick(v: View?) {
+                openWynikiActivity()
+            }
+        })
+
     }
 
-    fun clickHome1(view: View) {
-        val intent=Intent(this, Start::class.java)
+    fun openStartActivity(){
+        val intent = Intent(this, Start::class.java)
         startActivity(intent)
     }
-    fun clickHome2(view: View) {}
 
+    fun openWynikiActivity(){
+        val intent = Intent(this, Wyniki::class.java)
+        startActivity(intent)
+    }
 
 
 }

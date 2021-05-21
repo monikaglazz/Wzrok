@@ -9,6 +9,32 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Wzrok">
+        <activity android:name=".B7"></activity>
+        <activity android:name=".B6" />
+        <activity android:name=".B5" />
+        <activity android:name=".B4" />
+        <activity android:name=".B3" />
+        <activity android:name=".B2" />
+        <activity android:name=".B1" />
+        <activity android:name=".L7" />
+        <activity android:name=".L6" />
+        <activity android:name=".L5" />
+        <activity android:name=".L4" />
+        <activity android:name=".L3" />
+        <activity android:name=".L2" />
+        <activity android:name=".L1" />
+        <activity android:name=".ResultShow" />
+        <activity android:name=".ResultAfter" />
+        <activity android:name=".Both" />
+        <activity android:name=".Left" />
+        <activity android:name=".R7" />
+        <activity android:name=".R6" />
+        <activity android:name=".R5" />
+        <activity android:name=".R4" />
+        <activity android:name=".R3" />
+        <activity android:name=".R2" />
+        <activity android:name=".R1" />
+        <activity android:name=".Wyniki" />
         <activity
             android:name=".Right"
             android:parentActivityName=".Start">
@@ -23,7 +49,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity
             android:name=".Start"
             android:parentActivityName=".MainActivity">
@@ -31,7 +56,6 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MainActivity" />
         </activity>
-
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
