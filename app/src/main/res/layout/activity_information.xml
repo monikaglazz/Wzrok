@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="35dp"
+    android:layout_marginTop="80dp"
+    android:layout_marginRight="35dp"
+    android:layout_marginBottom="35dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/text_view1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Ustaw urządzenie w odległości około 33 cm od twarzy \n"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Badanie będzie składać się z 3 części: \n\nbadania LEWEGO oka \nbadania PRAWEGO oka \nbadania OBUOCZNEGO"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/text_view4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="\nW trakcie badania będą wyświetlane litery z alfabetu w zmiennym rozmiarze, jeżeli litera będzie niewyraźna naciśnij STOP"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnOk"
+        android:layout_width="127dp"
+        android:layout_height="121dp"
+        android:layout_gravity="center"
+        android:layout_margin="35dp"
+        android:background="@drawable/circle_small"
+        android:onClick="startRight"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+</LinearLayout>
