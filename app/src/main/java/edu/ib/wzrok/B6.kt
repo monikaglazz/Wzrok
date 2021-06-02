@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 
 class B6 : AppCompatActivity() {
     private var btnStop: Button? = null
@@ -40,5 +41,6 @@ class B6 : AppCompatActivity() {
     fun openB7() {
         val intent = Intent(this, B7::class.java)
         startActivity(intent)
+        Animatoo.animateFade(this)
     }
 }

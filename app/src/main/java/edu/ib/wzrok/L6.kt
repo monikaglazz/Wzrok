@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 
 class L6 : AppCompatActivity() {
 
@@ -40,6 +41,7 @@ class L6 : AppCompatActivity() {
     fun openL7(){
         val intent = Intent(this, L7::class.java)
         startActivity(intent)
+        Animatoo.animateFade(this)
     }
 
 

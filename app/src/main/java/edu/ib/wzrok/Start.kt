@@ -11,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.RequiresApi
 import androidx.core.content.res.TypedArrayUtils.getText
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.jar.Attributes
@@ -52,6 +53,11 @@ class Start : AppCompatActivity() {
         val formatted = current.format(formatter)
         date?.setText(formatted)
 
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        Animatoo.animateShrink(this)
     }
 
     fun openInformationActivity(){

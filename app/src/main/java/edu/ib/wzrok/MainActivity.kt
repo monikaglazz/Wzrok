@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,6 +34,11 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        Animatoo.animateCard(this) // dlaczego ta animacja nie działa?
     }
 
     fun openStartActivity(){

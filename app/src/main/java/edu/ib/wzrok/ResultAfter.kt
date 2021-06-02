@@ -9,7 +9,7 @@ import android.widget.TextView
 
 class ResultAfter : AppCompatActivity() {
 
-    private var textView10: TextView? = null
+    private var visus1: TextView? = null
     private var textView12: TextView? = null
     private var textView14: TextView? = null
     private var button2: Button? = null
@@ -17,6 +17,10 @@ class ResultAfter : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result_after)
+//
+//        visus1 = findViewById(R.id.visus1)
+//        val st = intent.extras?.get("visus1")
+//        visus1?.text = getString(st as Int)
 
         button2 = findViewById(R.id.button2)
         button2?.setOnClickListener(object : View.OnClickListener {
