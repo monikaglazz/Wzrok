@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 
 class L2 : AppCompatActivity() {
 
@@ -38,6 +39,7 @@ class L2 : AppCompatActivity() {
     fun openL3(){
         val intent = Intent(this, L3::class.java)
         startActivity(intent)
+        Animatoo.animateFade(this)
     }
 
     fun openBoth(){

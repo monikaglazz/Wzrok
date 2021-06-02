@@ -6,53 +6,40 @@
     android:layout_height="match_parent"
     tools:context=".Wyniki">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="200dp"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="160dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical" />
-    </ScrollView>
-
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="550dp"
+        android:layout_height="200dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="98dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <TextView
             android:id="@+id/textView4"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginTop="50dp"
-            android:background="#FFFB8EB1"
-            android:text="WYNIKI"
-            android:textStyle="bold"
-            android:textAlignment="center"
+            android:layout_height="80dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/gradient_solid"
             android:gravity="center"
+            android:text="WYNIKI"
+            android:textAlignment="center"
             android:textColor="@color/white"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textStyle="bold" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:weightSum="3"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="3">
 
             <TextView
                 android:id="@+id/textView5"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="10dp"
-                android:background="#FFCF8DF8"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_purple"
                 android:gravity="center"
                 android:text="DATA"
                 android:textAlignment="center"
@@ -63,10 +50,10 @@
             <TextView
                 android:id="@+id/textView6"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="10dp"
-                android:background="#FFCF8DF8"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_purple"
                 android:gravity="center"
                 android:text="IMIE"
                 android:textAlignment="center"
@@ -77,19 +64,76 @@
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="0dp"
-                android:layout_weight="1"
-                android:layout_height="60dp"
+                android:layout_height="70dp"
                 android:layout_marginTop="10dp"
-                android:background="#FFCF8DF8"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_corners_purple"
                 android:gravity="center"
                 android:text=""
                 android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="25sp"
-                android:textStyle="bold"  />
+                android:textStyle="bold" />
 
         </LinearLayout>
 
     </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="410dp"
+        android:layout_height="440dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:text="TextView"
+            android:textAlignment="center"/>
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/show_nutton" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/delete_button" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="POWRÓT"
+        android:background="@drawable/purple_back"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
