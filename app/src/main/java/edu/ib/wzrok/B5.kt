@@ -34,6 +34,8 @@ class B5 : AppCompatActivity() {
     }
 
     fun openResult() {
+        val v = 0.6
+        GlobalVariable.vis3=v.toString()
         val intent = Intent(this, ResultAfter::class.java)
         startActivity(intent)
     }

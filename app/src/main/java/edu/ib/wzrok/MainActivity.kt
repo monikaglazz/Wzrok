@@ -38,17 +38,20 @@ class MainActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        Animatoo.animateCard(this) // dlaczego ta animacja nie działa?
+        Animatoo.animateCard(this)
     }
 
     fun openStartActivity(){
         val intent = Intent(this, Start::class.java)
         startActivity(intent)
+        Animatoo.animateSlideLeft(this)
+
     }
 
     fun openWynikiActivity(){
         val intent = Intent(this, Wyniki::class.java)
         startActivity(intent)
+        Animatoo.animateSlideRight(this)
     }
 
 

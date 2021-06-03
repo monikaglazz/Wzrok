@@ -57,11 +57,12 @@ class Start : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        Animatoo.animateShrink(this)
+        Animatoo.animateSlideRight(this)
     }
 
     fun openInformationActivity(){
         val intent= Intent(this, InformationActivity::class.java)
         startActivity(intent)
+        Animatoo.animateSlideLeft(this)
     }
 }

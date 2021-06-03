@@ -43,6 +43,8 @@ class L2 : AppCompatActivity() {
     }
 
     fun openBoth(){
+        val v = 0.2
+        GlobalVariable.vis2=v.toString()
         val intent = Intent(this, Both::class.java)
         startActivity(intent)
     }
