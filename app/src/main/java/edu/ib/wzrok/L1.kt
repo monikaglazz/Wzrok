@@ -11,7 +11,6 @@ import com.blogspot.atifsoftwares.animatoolib.Animatoo
 class L1 : AppCompatActivity() {
     private var btnStop : Button? = null
     private var btnNext : Button? = null
-//    private var visus1: TextView? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -26,10 +25,8 @@ class L1 : AppCompatActivity() {
         })
 
         btnStop = findViewById(R.id.btnStop)
-//        visus1 = findViewById(R.id.visus1)
         btnStop?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-//                visus1?.setText("5.0")
                 openBoth()
 
             }
@@ -37,10 +34,12 @@ class L1 : AppCompatActivity() {
     }
 
     fun openBoth(){
+        val v = 0.1
+        GlobalVariable.vis2=v.toString()
         val intent = Intent(this, Both::class.java)
 //        val intent2 = Intent(this, ResultAfter::class.java)
-//        val visus = "0.5"
-//        intent2.putExtra("visus1",visus)
+//        val visus = 0.5
+//        intent2.putExtra("visus11",visus)
         startActivity(intent)
 
     }

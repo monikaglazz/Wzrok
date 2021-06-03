@@ -15,7 +15,7 @@
         android:onClick="clickHome1"
         android:text="@string/btnHome1"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textHome2" />
@@ -29,19 +29,19 @@
         android:onClick="clickHome2"
         android:text="@string/btnHome2"
         android:textColor="@color/white"
-        android:textSize="24sp"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnHome1" />
 
     <TextView
         android:id="@+id/textHome"
-        android:layout_width="67dp"
+        android:layout_width="80dp"
         android:layout_height="32dp"
         android:layout_marginTop="150dp"
         android:text="@string/textHome"
-        android:textSize="24sp"
         android:textColor="@color/black"
+        android:textSize="24dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -52,7 +52,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:text="@string/textHome2"
-        android:textSize="24sp"
+        android:textSize="24dp"
         android:textColor="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

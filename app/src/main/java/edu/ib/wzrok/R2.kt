@@ -41,6 +41,8 @@ class R2 : AppCompatActivity() {
     }
 
     fun openLeft(){
+        val v = 0.2
+        GlobalVariable.vis1=v.toString()
         val intent = Intent(this, Left::class.java)
         startActivity(intent)
     }

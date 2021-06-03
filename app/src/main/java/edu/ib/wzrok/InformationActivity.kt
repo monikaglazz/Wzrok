@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 
 class InformationActivity : AppCompatActivity() {
 
@@ -31,5 +32,11 @@ class InformationActivity : AppCompatActivity() {
     fun openRightActivity(){
         val intent= Intent(this, Right::class.java)
         startActivity(intent)
+        Animatoo.animateSlideLeft(this)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        Animatoo.animateSlideRight(this)
     }
 }

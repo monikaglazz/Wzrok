@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import com.blogspot.atifsoftwares.animatoolib.Animatoo
 
 class Right: AppCompatActivity() {
 
@@ -29,5 +30,10 @@ class Right: AppCompatActivity() {
     fun openR1(){
         val intent = Intent(this, R1::class.java)
         startActivity(intent)
+    }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        Animatoo.animateSlideRight(this)
     }
 }

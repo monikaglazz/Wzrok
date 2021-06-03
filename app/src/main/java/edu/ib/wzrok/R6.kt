@@ -22,26 +22,31 @@ class R6 : AppCompatActivity() {
         btnNext = findViewById(R.id.btnNext1)
         btnNext?.setOnClickListener(object  : View.OnClickListener{
             override fun onClick(v: View?) {
-                openR7()
+                openLeft()
             }
         })
 
         btnStop = findViewById(R.id.btnStop)
         btnStop?.setOnClickListener(object  : View.OnClickListener{
             override fun onClick(v: View?) {
-                openLeft()
+                openLeft_stop()
             }
         })
     }
 
-    fun openR7(){
-        val intent = Intent(this, R7::class.java)
+    fun openLeft_stop(){
+        val v = 0.8
+        GlobalVariable.vis1=v.toString()
+        val intent = Intent(this, Left::class.java)
         startActivity(intent)
-        Animatoo.animateFade(this)
+        Animatoo.animateSlideLeft(this)
     }
 
     fun openLeft(){
+        val v = 1.0
+        GlobalVariable.vis1=v.toString()
         val intent = Intent(this, Left::class.java)
         startActivity(intent)
+        Animatoo.animateSlideLeft(this)
     }
 }

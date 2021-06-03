@@ -10,20 +10,23 @@ import android.widget.TextView
 class ResultAfter : AppCompatActivity() {
 
     private var visus1: TextView? = null
-    private var textView12: TextView? = null
-    private var textView14: TextView? = null
-    private var button2: Button? = null
+    private var visus2: TextView? = null
+    private var visus3: TextView? = null
+    private var buttonsave: Button? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_result_after)
-//
-//        visus1 = findViewById(R.id.visus1)
-//        val st = intent.extras?.get("visus1")
-//        visus1?.text = getString(st as Int)
 
-        button2 = findViewById(R.id.button2)
-        button2?.setOnClickListener(object : View.OnClickListener {
+        visus1 = findViewById(R.id.visus1)
+        visus1?.setText(GlobalVariable.vis1);
+        visus2 = findViewById(R.id.visus2)
+        visus2?.setText(GlobalVariable.vis2);
+        visus3 = findViewById(R.id.visus3)
+        visus3?.setText(GlobalVariable.vis3);
+
+        buttonsave = findViewById(R.id.buttonsave)
+        buttonsave?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
                 openWyniki()
             }
