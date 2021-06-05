@@ -15,7 +15,7 @@ import com.blogspot.atifsoftwares.animatoolib.Animatoo
 import java.time.LocalDateTime
 import java.time.format.DateTimeFormatter
 import java.util.jar.Attributes
-
+import android.util.Log
 class Start : AppCompatActivity() {
 
     private var button : Button? = null
@@ -29,19 +29,22 @@ class Start : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
 
-//        userInput = findViewById(R.id.name)
+        val userInput: TextView  = findViewById(R.id.name)
+
 
         button = findViewById(R.id.button)
         button?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
-                openInformationActivity()
-//                val name: String = userInput.toString()
-//
-//                if(name.trim().length>0) {
-//                    openInformationActivity()
-//                }else{
-//                    Toast.makeText(applicationContext, "Musisz podać imie", Toast.LENGTH_SHORT).show()
-//                }
+
+                val name: String = userInput.text.toString()
+                Log.d("NAME","Wartośc imienia to: "+name)
+                if(name.trim().length>0) {
+                    Log.d("NAME","Idziemy dalej")
+                    openInformationActivity()
+                }else{
+                    Log.d("NAME","Wyswietlamy komunikat")
+                    Toast.makeText(applicationContext, "Musisz podać imie", Toast.LENGTH_SHORT).show()
+                }
 
             }
         })
