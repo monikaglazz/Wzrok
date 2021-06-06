@@ -30,8 +30,6 @@ class Start : AppCompatActivity() {
         setContentView(R.layout.activity_start)
 
         val userInput: TextView  = findViewById(R.id.name)
-
-
         button = findViewById(R.id.button)
         button?.setOnClickListener(object : View.OnClickListener {
             override fun onClick(v: View?) {
