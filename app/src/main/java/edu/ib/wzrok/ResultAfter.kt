@@ -14,9 +14,8 @@ import androidx.room.Room
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.runBlocking
 import kotlinx.coroutines.withContext
-import java.sql.Date
-import java.time.LocalDate
-import java.time.LocalDateTime
+import java.util.*
+
 
 class ResultAfter : AppCompatActivity() {
 
@@ -65,9 +64,10 @@ class ResultAfter : AppCompatActivity() {
     }
     suspend fun insertResult(visusL: Float,visusR: Float,visusB: Float,name: String){
         return withContext(Dispatchers.IO){
-            var db = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "results-db").build()
+            var db = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "results-db").fallbackToDestructiveMigration()
+                .build()
             var resultDB = db.resultDao()
-            resultDB.insert(Result(0,visusL,visusR,visusB,GlobalVariable.name))
+            resultDB.insert(Result(0,visusL,visusR,visusB,GlobalVariable.name, Date()))
         }
 
     }
