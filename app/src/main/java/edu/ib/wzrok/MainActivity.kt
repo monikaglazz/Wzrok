@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.TextView
 import androidx.core.content.ContextCompat.startActivity
+import androidx.room.Room
 import com.blogspot.atifsoftwares.animatoolib.Animatoo
 
 class MainActivity : AppCompatActivity() {
@@ -33,6 +34,7 @@ class MainActivity : AppCompatActivity() {
                 openWynikiActivity()
             }
         })
+
 
     }
 

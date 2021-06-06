@@ -38,6 +38,7 @@ class Start : AppCompatActivity() {
                 Log.d("NAME","Wartośc imienia to: "+name)
                 if(name.trim().length>0) {
                     Log.d("NAME","Idziemy dalej")
+                    GlobalVariable.name = name
                     openInformationActivity()
                 }else{
                     Log.d("NAME","Wyswietlamy komunikat")
