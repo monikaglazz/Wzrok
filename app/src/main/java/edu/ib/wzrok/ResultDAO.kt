@@ -7,7 +7,7 @@ import androidx.room.Query
 
 @Dao
 interface ResultDAO {
-    @Query("SELECT * from results")
+    @Query("SELECT * FROM results ORDER BY date")
     fun getAll(): List<Result>
 
     @Insert

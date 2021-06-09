@@ -10,6 +10,8 @@
     <string name="Name">Wprowadź swoje imię</string>
     <string name="Next">DALEJ</string>
     <string name="Stop">STOP</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 
 </resources>

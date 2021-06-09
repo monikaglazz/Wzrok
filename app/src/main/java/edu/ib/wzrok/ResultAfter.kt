@@ -44,8 +44,7 @@ class ResultAfter : AppCompatActivity() {
                     insertResult(
                         visus1.text.toString().toFloat(),
                         visus2.text.toString().toFloat(),
-                        visus3.text.toString().toFloat(),
-                        GlobalVariable.name
+                        visus3.text.toString().toFloat()
                     )
 
                 }
@@ -62,7 +61,7 @@ class ResultAfter : AppCompatActivity() {
         val intent = Intent(this, Wyniki::class.java)
         startActivity(intent)
     }
-    suspend fun insertResult(visusL: Float,visusR: Float,visusB: Float,name: String){
+    suspend fun insertResult(visusL: Float,visusR: Float,visusB: Float){
         return withContext(Dispatchers.IO){
             var db = Room.databaseBuilder(applicationContext, AppDatabase::class.java, "results-db").fallbackToDestructiveMigration()
                 .build()

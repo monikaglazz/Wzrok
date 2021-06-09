@@ -41,7 +41,7 @@
         android:text="A"
         android:textAlignment="gravity"
         android:textColor="@color/black"
-        android:textSize="400sp"
+        android:textSize="9mm"
         app:layout_constraintBottom_toTopOf="@+id/btnNext1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
