@@ -9,7 +9,7 @@
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
+        android:layout_height="0dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -29,7 +29,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="horizontal"
             android:weightSum="3">
 
@@ -42,7 +42,6 @@
                 android:background="@drawable/rounded_corners_purple"
                 android:gravity="center"
                 android:text="DATA"
-                android:textAlignment="center"
                 android:textColor="@color/white"
                 android:textSize="24dp"
                 android:textStyle="bold" />
@@ -77,65 +76,25 @@
 
         </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="440dp"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/WynikiRecycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#DA0606"
+                android:visibility="visible"
+                tools:itemCount="2">
 
-        <TextView
-            android:id="@+id/textView16"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="TextView"
-            android:textSize="18dp"
-            android:gravity="center" />
+            </androidx.recyclerview.widget.RecyclerView>
 
-        <TextView
-            android:id="@+id/textView17"
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            android:text="TextView"
-            android:textSize="18dp"
-            android:gravity="center"/>
-
-        <ImageButton
-            android:id="@+id/imageButton2"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/show_nutton" />
-
-        <ImageButton
-            android:id="@+id/imageButton"
-            android:layout_width="0dp"
-            android:layout_height="40dp"
-            android:layout_weight="1"
-            app:srcCompat="@drawable/delete_button" />
+        </LinearLayout>
 
     </LinearLayout>
 
-
-<!--    <Button-->
-<!--        android:id="@+id/buttonBack"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:layout_marginBottom="15dp"-->
-<!--        android:layout_marginLeft="10dp"-->
-<!--        android:layout_marginRight="10dp"-->
-<!--        android:text="POWRÓT"-->
-<!--        android:background="@drawable/purple_back"-->
-<!--        android:textColor="@color/white"-->
-<!--        android:textSize="20dp"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintStart_toStartOf="parent" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
